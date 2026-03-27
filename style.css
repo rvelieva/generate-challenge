@@ -1,0 +1,37 @@
+   body {
+      font-family: "Balsamiq Sans", sans-serif;;
+      text-align: center;
+      background: #B4C292;
+      padding: 30px;
+      font-weight: 500;
+    }
+    h1 {
+      color: #333;
+      font-family: "Rubik Dirt", system-ui;
+      font-weight: 550;
+    }
+    .box {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      margin: 20px auto;
+      max-width: 500px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .celebrateText{
+      font-family: "Raleway", sans-serif;
+      text-align:start;
+    }
+    .celebrate{
+      font-family: "Raleway", sans-serif;
+      text-align:center;
+      font-size: large;
+    }
+    #footerText{
+      font-family: "Raleway", sans-serif;
+      text-align: center;
+    }

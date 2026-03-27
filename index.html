@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <title>Мисия на деня</title>
+  <link
+  rel = "styleSheet"
+  href="style.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Dirt&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<h1>Твоята мисия</h1>
+
+<div class="box">
+  <p id="challenge"></p>
+</div>
+
+<div class="box">
+  <img id="meme" src="">
+</div>
+<div class = "box">
+    
+    <p class = "celebrateText">Не забравяй – понякога една малка шега може да направи нечий ден много по-хубав.
+        <p class="celebrateText">Бъди креативен, забавлявай се, уважавай другите и най-важното – разпространявай добро настроение!</p>
+        <p class = celebrate>Честит 1 април!</p>
+    </div>
+    <div class = footer>
+        <hr/>
+        <footer>
+
+            <small id = footerText>УС на СУ "Никола Й. Вапцаров" - село Борино</small>
+        </footer>
+    </div>
+<script>
+  const challenges = [
+"Направи забавна снимка с класа си! Изпрати я на @us_suborino в Инстаграм или на УС на СУ “Никола Й. Вапцаров” - Борино във Фейсбук",
+"Събери 3-ма приятели и направете снимка с най-странната физиономия! Изпрати я на @us_suborino в Инстаграм или УС на СУ “Никола Й. Вапцаров” - Борино във Фейсбук",
+"Нарисувай си смешни мустаци и се снимай! Изпрати на @us_suborino в инстаграм или УС на СУ “Никола Й. Вапцаров” - Борино във Фейсбук",
+"Направи снимка с класа си ‘учим усърдно’, но всички държат тетрадките наобратно!  Изпрати на @us_suborino в Инстаграм или УС на СУ “Никола Й. Вапцаров” - Борино във Фейсбук",
+"Направете снимка ‘най-готиният клас в училището’!  Изпрати на @us_suborino в Инстаграм или на УС на СУ “Никола Й. Вапцаров” - Борино във Фейсбук",
+"Снимай се с любимия си учител и направете интересна физиономия! Изпрати я на @us_suborino в Инстаграм или на УС на СУ “Никола Й. Вапцаров” - Борино във Фейсбук.",
+"Ако виждаш това – трябва да направиш снимка СЕГА!  Изпрати я на @us_suborino в Инстаграм или на УС на СУ “Никола Й. Вапцаров” - Борино във Фейсбук.",
+"Имаш 60 секунди да направиш най-смешната снимка! Изпрати я на @us_borino в Инстаграм или на УС на СУ “Никола Й. Вапцаров” - Борино във Фейсбук.",
+"Снимайте се с учител сякаш той/тя е ученик, а вие сте учители! Изпрати я на @us_borino в Инстаграм или на УС на СУ “Никола Й. Вапцаров” - Борино във Фейсбук.",
+"Снимай се с 2-ма различни учители! Изпрати я на @us_borino в Инстаграм или на УС на СУ “Никола Й. Вапцаров” - Борино във Фейсбук.",
+"Направете снимка с приятели, сякаш сте супер известни личности! Изпрати я на @us_borino в Инстаграм или на УС на СУ “Никола Й. Вапцаров” - Борино във Фейсбук.",
+"Снимайте се с приятели в права линия като войници! Изпрати я на @us_borino в Инстаграм или на УС на СУ “Никола Й. Вапцаров” - Борино във Фейсбук.",
+"Направете снимка, в която всички седят странно (на маси, под чинове)! Изпрати я на @us_borino в Инстаграм или на УС на СУ “Никола Й. Вапцаров” - Борино във Фейсбук.",
+"Снимайте се как всички ‘спят’ в час! Изпрати я на @us_borino в Инстаграм или на УС на СУ “Никола Й. Вапцаров” - Борино във Фейсбук.",
+"Сложете си нещо на главата (книга, тетрадка) и се снимайте! Изпрати я на @us_borino в Инстаграм или на УС на СУ “Никола Й. Вапцаров” - Борино във Фейсбук.",
+"Ти си избран — разсмей първия човек, когото видиш!" ,
+"Ти си супер спокоен — реагирай бавно и спокойно на всичко!",
+"Ти си в центъра на вниманието — дръж се така 1 минута!",
+"Ти си най-готиният — върви с увереност!",
+"Ти знаеш всичко — отговаряй уверено на всичко!",
+"Ти си в turbo режим — прави всичко бързо за 30 секунди!",
+"Ти си freeze — замръзни, когато някой те погледне",
+"Събери 3-ма души и направете нещо смешно!",
+"Ти си актьор — преигравай всичко!",
+"Ти си легенда — докажи го с нещо смешно!",
+"Ти си в slow режим — движи се бавно!",
+"Ти си инфлуенсър — изпрати ни твоя реклама на продукт по избор! Изпрати я на @us_borino в Инстаграм или на УС на СУ “Никола Й. Вапцаров” - Борино във Фейсбук.",
+"Ти си репортер — вземи „интервю“ от някого! Изпрати я на @us_borino в Инстаграм или на УС на СУ “Никола Й. Вапцаров” - Борино във Фейсбук.",
+"Ти си hype човек — надъхвай и вдъхновявай всички около теб!",
+"Кажи „благодаря“ на учител по креативен начин",
+"Накарай някого да се усмихне!",
+"Имаш 30 секунди да разсмееш някого!",
+"Изкарай 6 по математика!",
+"Ти си отличник — вдигай ръка за всичко!",
+"Задай интересен въпрос на учител!",
+"Ти си учител за 1 минута — обясни нещо пред класа!",
+"Ти си любим ученик — помогни на учител или съученик!",
+"Разсмей учител!",
+"Поздрави учител сякаш е супер звезда!",
+"Направете снимка „преди/след контролно“! Изпрати я на @us_borino в Инстаграм или на УС на СУ “Никола Й. Вапцаров” - Борино във Фейсбук.",
+"Снимайте се като различни емоции (всеки с различно настроение)! Изпрати я на @us_borino в Инстаграм или на УС на СУ “Никола Й. Вапцаров” - Борино във Фейсбук."
+];
+
+const memes = 
+[
+"pictures/img1.jpg",
+"pictures/img (2).jpg",
+"pictures/img (3).jpg",
+"pictures/img (4).jpg",
+"pictures/img (5).jpg",
+"pictures/img (6).jpg",
+"pictures/img (7).jpg",
+"pictures/img (8).jpg",
+"pictures/img (9).jpg",
+"pictures/img (10).jpg",
+"pictures/img (11).jpg",
+"pictures/img (12).jpg",
+"pictures/img (13).jpg",
+"pictures/img (14).jpg",
+"pictures/img (15).jpg",
+"pictures/img (16).jpg",
+"pictures/img (17).jpg",
+"pictures/img (18).jpg",
+"pictures/img (19).jpg",
+"pictures/img (20).jpg",
+"pictures/img (21).jpg",
+"pictures/img (22).jpg",
+"pictures/img (23).jpg",
+"pictures/img (24).jpg",
+"pictures/img (25).jpg",
+"pictures/img (26).jpg",
+"pictures/img (27).jpg",
+"pictures/img (28).jpg",
+"pictures/img (29).jpg",
+"pictures/img (30).jpg",
+"pictures/img (31).jpg",
+"pictures/img (32).jpg",
+"pictures/img (33).jpg",
+"pictures/img (34).jpg",
+"pictures/img (35).jpg",
+"pictures/img (36).jpg",
+"pictures/img (37).jpg",
+"pictures/img (38).jpg",
+"pictures/img (39).jpg",
+"pictures/img (40).jpg",
+"pictures/img (41).jpg",
+"pictures/img (42).jpg",
+"pictures/img (43).jpg",
+"pictures/img (44).jpg",
+"pictures/img (45).jpg",
+"pictures/img (46).jpg",
+"pictures/img (47).jpg",
+"pictures/img (48).jpg",
+"pictures/img (49).jpg",
+"pictures/img (50).jpg",
+"pictures/img (51).jpg",
+"pictures/img (52).jpg",
+"pictures/img (53).jpg",
+"pictures/img (54).jpg",
+"pictures/img (55).jpg",
+"pictures/img (56).jpg",
+"pictures/img (57).jpg",
+"pictures/img (58).jpg",
+"pictures/img (59).jpg",
+"pictures/img (60).jpg",
+"pictures/img (61).jpg",
+"pictures/img (62).jpg",
+"pictures/img (63).jpg",
+"pictures/img (64).jpg",
+"pictures/img (65).jpg",
+"pictures/img (66).jpg",
+"pictures/img (67).jpg",
+"pictures/img (68).jpg",
+"pictures/img (69).jpg",
+"pictures/img (70).jpg",
+"pictures/img (71).jpg",
+"pictures/img (72).jpg",
+];
+
+function generate() {
+  const randomChallenge = challenges[Math.floor(Math.random() * challenges.length)];
+  const randomMeme = memes[Math.floor(Math.random() * memes.length)];
+
+  document.getElementById("challenge").innerText = randomChallenge;
+  document.getElementById("meme").src = randomMeme;
+}
+
+
+window.onload = generate;
+</script>
+</body>
+</html>
