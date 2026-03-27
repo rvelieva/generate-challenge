@@ -9,14 +9,20 @@
       color: #333;
       font-family: "Rubik Dirt", system-ui;
       font-weight: 550;
+      font-size: 50pt;
     }
     .box {
       background: white;
-      padding: 20px;
+     
+      padding-top: 50px;
+      padding-bottom: 50px;
+padding-left: 70px;
+padding-right: 70px;
       border-radius: 15px;
       margin: 20px auto;
       max-width: 500px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      font-size: 20pt;
     }
     img {
       max-width: 100%;
@@ -25,11 +31,13 @@
     .celebrateText{
       font-family: "Raleway", sans-serif;
       text-align:start;
+      font-size: 15pt;
+
     }
     .celebrate{
       font-family: "Raleway", sans-serif;
       text-align:center;
-      font-size: large;
+      font-size: 30pt;
     }
     #footerText{
       font-family: "Raleway", sans-serif;
