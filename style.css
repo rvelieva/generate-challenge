@@ -24,6 +24,19 @@ padding-right: 100px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       font-size: 20pt;
     }
+    .innerBox{
+background: white;
+     
+      padding-top: 0px;
+      padding-bottom: 0px;
+padding-left: 100px;
+padding-right: 100px;
+      border-radius: 15px;
+      margin: 20px auto;
+      max-width: 500px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      font-size: 15pt;
+    }
     img {
       max-width: 100%;
       border-radius: 10px;
